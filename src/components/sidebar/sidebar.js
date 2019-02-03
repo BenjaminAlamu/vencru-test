@@ -7,27 +7,34 @@ import feedback from "../../assets/img/feedback.png";
 import items from "../../assets/img/items.png";
 import sales from "../../assets/img/sales.png";
 import settings from "../../assets/img/settings.png";
+import hamburger from "../../assets/img/hamburger.png"
 
 import './sidebar.css';
 
 class SideBar extends Component {
 
     toggleSideBar() {
-        let style = document.getElementById("side-bar").style.display
-        if (style === "" || style === "none") {
-            document.getElementById("side-bar").style.display = "block"
+        let style = document.getElementsByClassName("sidebar-content")[0].style.display
+        if (window.innerWidth > 600) {
+            return
+        }
+        else if  ((window.innerWidth < 600) && (style === "" || style === "none" || style === "hidden")) {
+            document.getElementsByClassName("sidebar-content")[0].style.display = "block"
         }
         else {
-            document.getElementById("side-bar").style.display = "none"
+            document.getElementsByClassName("sidebar-content")[0].style.display = "none"
         }
     }
   render() {
     return (
         <div className="sidebar">
+
             <div className="hamburger" id="ham" onClick={this.toggleSideBar}>
-                <p>Hanburger for side nav</p>
+                <span className='hamburger-img'><img src={hamburger} className="ham-img" /></span>
+                <span className="feedback"><p >Feedback</p></span>
             </div>
             <div className="sidebar-content" id="side-bar">
+
                 <nav>
                     <ul>
                         <li>

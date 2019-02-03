@@ -26,11 +26,37 @@ li{
     
 }
 
-.sidebar-content{
+.sidebar{
     background-color: #FDFEFE;
+}
+
+.sidebar-content{
     height: 100vh;
     width: 100%;
     display: none;
+}
+
+.hamburger{
+    display: flex;
+}
+
+.hamburger-img{
+    background-color: #2D74DA;
+    width: 30%;
+    padding: auto;
+}
+
+.ham-img{
+    display: block;
+    margin: 15px auto;
+    
+}
+
+.feedback{
+    background-color: #79A6F6;
+    width: 70%;
+    color: white;
+    text-align: center;
 }
 
 @media only screen and (min-width: 600px) {
@@ -41,9 +67,9 @@ li{
         display: block;
     }
 
-    .hamburger{
+    /* .hamburger{
         display: none;
-    }
+    } */
 
     li a span:nth-child(2){
         display: none;
@@ -59,9 +85,9 @@ li{
         
     }
 
-    .hamburger{
+    /* .hamburger{
         display: none;
-    }
+    } */
 
 
     li a span:nth-child(2){

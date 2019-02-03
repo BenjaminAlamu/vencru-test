@@ -1,0 +1,98 @@
+.wrapper{
+
+}
+
+.modal-title{
+    font-weight: bold;
+line-height: normal;
+font-size: 24px;
+
+color: #2D74DA;
+text-align: justify;
+}
+
+.cancel{
+    font-size: 11.6335px;
+text-align: center;
+color: #8CA0B3;
+background-color: #fff;
+padding: 10px 20px;
+border: 0;
+margin:10px;
+mix-blend-mode: normal;
+opacity: 0.96;
+font-family: "Lato";
+}
+
+.save{
+    background: #2D74DA;
+border-radius: 3px;
+color: #fff;
+font-family: "Lato";
+padding: 10px 20px;
+border: 0;
+margin:10px;
+}
+
+.bottom{
+    float: right;
+}
+
+.wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    padding: 50px;
+    opacity: 0.9;
+}
+
+.modal-content{
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    margin:  50px auto;
+    padding: 30px;
+}
+
+.text-area{
+    width: 90%;
+    height: 150px;
+    border: 0.997541px solid #8CA0B3;
+    font-family: "Lato";
+}
+
+@media only screen and (min-width: 600px) {
+
+
+.wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    padding: 50px;
+    opacity: 0.9;
+}
+
+.modal-content{
+    background-color: #fff;
+    position: relative;
+    width: 500px;
+    height: 400px;
+    margin:  50px auto;
+    padding: 30px;
+}
+
+.text-area{
+    width: 80%;
+    height: 150px;
+    border: 0.997541px solid #8CA0B3;
+    font-family: "Lato";
+}
+
+}
